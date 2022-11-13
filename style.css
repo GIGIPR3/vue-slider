@@ -1,0 +1,17 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.centro{
+    margin-top: 15%;
+}
+
+.bottone{
+    color: blue;
+}
+
+.bottone:hover{
+    cursor: pointer;
+}
