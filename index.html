@@ -16,11 +16,12 @@
 
     <div id="root">
         <div class="text-center centro">
-            <i class="fa-solid fa-chevron-left fs-2 bottone"></i>
+            <i class="fa-solid fa-chevron-left bottone fs-4" @click=""></i>
             <!-- <img src="./immagini/immagine1.jpg" alt=""> -->
-            <img v-bind:src="immagini[indice]" alt="" class="">
+            <img v-bind:src="immagini[indice].immagine" alt="" class="mx-3">
 
-            <i class="fa-solid fa-chevron-right fs-2 bottone" @onclick=" prossimaImmagine "></i>
+            <i class="fa-solid fa-chevron-right bottone fs-4" @click=" prossimaImmagine "></i>
+            
         </div>
         
 
