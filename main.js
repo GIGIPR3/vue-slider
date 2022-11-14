@@ -1,16 +1,25 @@
 var app = new Vue({
     el: '#root',
     data: {
-        immagini: [
-            {immagine: './immagini/immagine1.jpg'},
+        immagini: [{
+                immagine: './immagini/immagine1.jpg'
+            },
 
-            {immagine: './immagini/immagine2.jpg'},
+            {
+                immagine: './immagini/immagine2.jpg'
+            },
 
-            {immagine: './immagini/immagine3.jpg'},
+            {
+                immagine: './immagini/immagine3.jpg'
+            },
 
-            {immagine: './immagini/immagine4.jpg'},
+            {
+                immagine: './immagini/immagine4.jpg'
+            },
 
-            {immagine: './immagini/immagine5.jpg'},
+            {
+                immagine: './immagini/immagine5.jpg'
+            },
 
         ],
 
@@ -27,6 +36,14 @@ var app = new Vue({
                 this.indice = 0;
 
             }
-        }
+        },
+        immaginePrecedente: function () {
+            if (this.indice <= 0) {
+                this.indice = this.obj.length - 1;
+
+            } else {
+                this.indice--;
+            }
+        },
     }
 })
